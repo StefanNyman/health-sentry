@@ -1,4 +1,4 @@
-package sentry
+package health_sentry
 
 import (
 	"github.com/getsentry/raven-go"
