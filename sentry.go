@@ -76,6 +76,10 @@ func (s *Sink) EmitComplete(job string, status health.CompletionStatus, nanos in
 	// no-op
 }
 
+func (s *Sink) EmitGauge(job string, event string, value float64, kvs map[string]string) {
+	// no-op
+}
+
 func (s *Sink) ShutdownServer() {
 	s.raven.Close()
 }
